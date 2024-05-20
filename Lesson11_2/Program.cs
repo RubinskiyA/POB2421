@@ -1,0 +1,10 @@
+﻿string anim1 = "слоны, жирафы, львы.";
+string anim2 = "медвери, волки, пингвины.";
+string anim3 = "кенгуру.";
+Console.WriteLine("Введите текущую температуру");
+double temp = double.Parse(Console.ReadLine());
+if (temp > 20&& temp<39.9) Console.WriteLine($"Гулять идут {anim1}");
+else if (temp < 20&& temp >-19.9) Console.WriteLine($"Гулять идут {anim2}");
+else if (temp == 20) Console.WriteLine($"Гулять идут {anim3}");
+else if (temp > 40) Console.WriteLine("Высокая температура! Не выпускать зверей.");
+else if (temp <-20) Console.WriteLine("Низкая температура температура! Не выпускать зверей.");

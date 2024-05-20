@@ -1,0 +1,73 @@
+﻿Console.Write("Введите необходимое количество символов в пароле: ");
+int num = int.Parse(Console.ReadLine());
+Random random = new Random();
+Console.Write("Вот ваш пароль: ");
+for (int i = 0; i < num; i++)
+{
+int rand = random.Next(1,63);
+    switch(rand)
+    {
+        case 1: Console.Write("A");break;
+        case 2: Console.Write("B");break;
+        case 3: Console.Write("C");break;
+        case 4: Console.Write("D");break;
+        case 5: Console.Write("E");break;
+        case 6: Console.Write("F");break;
+        case 7: Console.Write("G");break;
+        case 8: Console.Write("H");break;
+        case 9: Console.Write("I");break;
+        case 10: Console.Write("J");break;
+        case 11: Console.Write("K");break;
+        case 12: Console.Write("L");break;
+        case 13: Console.Write("M");break;
+        case 14: Console.Write("N");break;
+        case 15: Console.Write("O");break;
+        case 16: Console.Write("P");break;
+        case 17: Console.Write("Q");break;
+        case 18: Console.Write("R");break;
+        case 19: Console.Write("S"); break;
+        case 20: Console.Write("T"); break;
+        case 21: Console.Write("U"); break;
+        case 22: Console.Write("V"); break;
+        case 23: Console.Write("W"); break;
+        case 24: Console.Write("X"); break;
+        case 25: Console.Write("Y"); break;
+        case 26: Console.Write("Z"); break;
+        case 27: Console.Write("a");break;
+        case 28: Console.Write("b"); break;
+        case 29: Console.Write("c"); break;
+        case 30: Console.Write("d"); break;
+        case 31: Console.Write("e"); break;
+        case 32: Console.Write("f"); break;
+        case 33: Console.Write("g"); break;
+        case 34: Console.Write("h"); break;
+        case 35: Console.Write("i"); break;
+        case 36: Console.Write("j"); break;
+        case 37: Console.Write("k"); break;
+        case 38: Console.Write("l"); break;
+        case 39: Console.Write("m"); break;
+        case 40: Console.Write("n"); break;
+        case 41: Console.Write("o"); break;
+        case 42: Console.Write("p"); break;
+        case 43: Console.Write("q"); break;
+        case 44: Console.Write("r"); break;
+        case 45: Console.Write("s"); break;
+        case 46: Console.Write("t"); break;
+        case 47: Console.Write("u"); break;
+        case 48: Console.Write("v"); break;
+        case 49: Console.Write("w"); break;
+        case 50: Console.Write("x"); break;
+        case 51: Console.Write("y"); break;
+        case 52: Console.Write("z"); break;
+        case 53: Console.Write("1"); break;
+        case 54: Console.Write("2"); break;
+        case 55: Console.Write("3"); break;
+        case 56: Console.Write("4"); break;
+        case 57: Console.Write("5"); break;
+        case 58: Console.Write("6"); break;
+        case 59: Console.Write("7"); break;
+        case 60: Console.Write("8"); break;
+        case 61: Console.Write("9"); break;
+        case 62: Console.Write("0"); break;
+    }
+}
