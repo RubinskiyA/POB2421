@@ -85,8 +85,9 @@ string path = "C:/Users/c7pc10/Desktop/test";
 path+="/" + nameFile;
 if (File.Exists(path))
 {
-    Console.WriteLine("Действительно удалить файл?(y-да,n-нет");
+    Console.WriteLine("Действительно удалить файл?(y-да,n-нет)");
     string answer = Console.ReadLine();
+   
     switch (answer)
     {
         case "y":
@@ -95,8 +96,9 @@ if (File.Exists(path))
                 Console.WriteLine("Файл успешно удален.");break;
             }
         case "n": Console.WriteLine("Не удаляю =)");break;
-        default: Console.WriteLine("Для ввода доступны только y или n!"); 
+        default: Console.WriteLine("Для ввода доступны только y или n!"); break;
     }
+    
             //if (answer == "y")
             //{
             //    File.Delete(path);
