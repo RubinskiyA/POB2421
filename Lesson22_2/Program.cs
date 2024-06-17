@@ -16,4 +16,8 @@
     {
         Console.WriteLine(e.Message);
     }
+    catch (OverflowException e)
+    {
+        Console.WriteLine(e.Message);
+    }
 } while (true);
