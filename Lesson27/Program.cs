@@ -79,29 +79,37 @@
 //}
 //Alphabet(1103);
 
-void Recur2(int n,int m)
-{
-    if (m == n) Console.Write(m + " ");
+//void Recur2(int n,int m)
+//{
+//    if (m == n) Console.Write(m + " ");
 
-    else if (n < m)
-    {
-        {
-            Console.Write(m + " ");
-            Recur2(n, m - 1);
-        };
-    }
-    else
-    { 
+//    else if (n < m)
+//    {
+//        {
+//            Console.Write(m + " ");
+//            Recur2(n, m - 1);
+//        };
+//    }
+//    else
+//    { 
         
-            Recur2(n-1, m);
-            Console.Write(n + " ");
+//            Recur2(n-1, m);
+//            Console.Write(n + " ");
        
-    }
-}
-Console.WriteLine("Введите первое число:");
-int n;
-int.TryParse(Console.ReadLine(),out n);
-Console.WriteLine("Введите второе число:");
-int m;
-int.TryParse(Console.ReadLine(), out m);
-Recur2(n,m);    
+//    }
+//}
+//Console.WriteLine("Введите первое число:");
+//int n;
+//int.TryParse(Console.ReadLine(),out n);
+//Console.WriteLine("Введите второе число:");
+//int m;
+//int.TryParse(Console.ReadLine(), out m);
+//Recur2(n,m);    
+
+//int Sum(int n)
+//{
+//    if (n>0&&n<10) return n;
+//    else return n % 10 + Sum(n / 10);
+//}
+//Console.WriteLine(Sum(123));
+
