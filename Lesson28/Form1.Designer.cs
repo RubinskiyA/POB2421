@@ -85,6 +85,7 @@
             textBoxFirstVar.Name = "textBoxFirstVar";
             textBoxFirstVar.Size = new Size(100, 23);
             textBoxFirstVar.TabIndex = 4;
+            textBoxFirstVar.Enter += textBoxFirstVar_Enter;
             textBoxFirstVar.KeyPress += textBoxFirstVar_KeyPress;
             // 
             // labelFirstVar

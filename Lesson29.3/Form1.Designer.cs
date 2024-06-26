@@ -1,4 +1,4 @@
-﻿namespace Lesson28._4
+﻿namespace Lesson29._3
 {
     partial class Form1
     {
@@ -28,67 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            label1 = new Label();
-            label2 = new Label();
+            folderBrowserDialog1 = new FolderBrowserDialog();
+            listBoxPictures = new ListBox();
+            buttonOpen = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // listBoxPictures
             // 
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Calibri", 25F);
-            label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(32, 51);
-            label1.Name = "label1";
-            label1.Size = new Size(107, 41);
-            label1.TabIndex = 0;
-            label1.Text = "YOUR";
+            listBoxPictures.Font = new Font("Calibri", 9.75F, FontStyle.Italic, GraphicsUnit.Point, 204);
+            listBoxPictures.FormattingEnabled = true;
+            listBoxPictures.ItemHeight = 15;
+            listBoxPictures.Location = new Point(27, 22);
+            listBoxPictures.Name = "listBoxPictures";
+            listBoxPictures.Size = new Size(296, 289);
+            listBoxPictures.TabIndex = 0;
+            listBoxPictures.SelectedIndexChanged += listBoxPictures_SelectedIndexChanged;
             // 
-            // label2
+            // buttonOpen
             // 
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Calibri", 39.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(46, 92);
-            label2.Name = "label2";
-            label2.Size = new Size(159, 70);
-            label2.TabIndex = 1;
-            label2.Text = "LOGO";
+            buttonOpen.Location = new Point(27, 330);
+            buttonOpen.Name = "buttonOpen";
+            buttonOpen.Size = new Size(296, 39);
+            buttonOpen.TabIndex = 1;
+            buttonOpen.Text = "Загрузить";
+            buttonOpen.UseVisualStyleBackColor = true;
+            buttonOpen.Click += buttonOpen_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(177, 12);
+            pictureBox1.Location = new Point(375, 22);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(95, 80);
+            pictureBox1.Size = new Size(392, 347);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(284, 411);
+            ClientSize = new Size(800, 387);
             Controls.Add(pictureBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(buttonOpen);
+            Controls.Add(listBoxPictures);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Просмотр фотографий";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private FolderBrowserDialog folderBrowserDialog1;
+        private ListBox listBoxPictures;
+        private Button buttonOpen;
         private PictureBox pictureBox1;
     }
 }

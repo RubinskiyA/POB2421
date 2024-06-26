@@ -112,5 +112,10 @@ namespace Lesson28
 
             e.Handled = true;
         }
+
+        private void textBoxFirstVar_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
