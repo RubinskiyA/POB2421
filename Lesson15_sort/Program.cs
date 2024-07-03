@@ -142,13 +142,13 @@
 //Console.WriteLine();
 //Console.WriteLine($"{masSum.Average():f2}");
 
-//Random random = new Random();
-//int[] mas1 = new int[10];
-//for (int i = 0; i < mas1.Length; i++)
-//{
-//    mas1[i] = random.Next(20);
-//    Console.Write(mas1[i] + " ");
-//}
+Random random = new Random();
+int[] mas1 = new int[10];
+for (int i = 0; i < mas1.Length; i++)
+{
+    mas1[i] = random.Next(20);
+    Console.Write(mas1[i] + " ");
+}
 //Console.WriteLine();
 //Console.WriteLine("Max=" + mas1.Max() + " " + "Min=" + mas1.Min());
 
@@ -174,3 +174,5 @@
 //    }
 //}
 /////////////////////////////////////////
+Console.WriteLine();
+Console.WriteLine(mas1.Sum());
