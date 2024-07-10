@@ -102,7 +102,7 @@ namespace Lesson33_2
             {
                 listBoxTask.Items.Add(myTask.getTask());
                 listBoxDate.Items.Add(myTask.getDate());
-                listBoxTaskPriority.Items.Add(myTask.getPriority());
+                listBoxTaskPriority.Items.Add(myTask.getPriority()); 
             }
 
         }
