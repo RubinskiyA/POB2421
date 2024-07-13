@@ -32,10 +32,10 @@ namespace Lesson30_analys
             result = "";
             labelOutput.Text = "";
             analizer = new Analizer(textBoxInput.Text);
-            if (checkBoxCount.Checked) result += analizer.getLength()+"\n";
+            if (checkBoxCount.Checked) result += analizer.getLength() + "\n";
             if (checkBoxFind.Checked)
             {
-                result += analizer.haveSubSring(textBoxSubString.Text).ToString()+"\n";
+                result += analizer.haveSubSring(textBoxSubString.Text).ToString() + "\n";
             }
             if (radioButtonUpper.Checked) result += analizer.toUpper();
             if (radioButtonLower.Checked) result += analizer.toLower();
@@ -56,6 +56,11 @@ namespace Lesson30_analys
                 checkBoxFind.Checked = false;
                 radioButtonLower.Checked = false;
             }
+        }
+
+        private void textBoxInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
