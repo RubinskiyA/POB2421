@@ -151,7 +151,7 @@
 //    if (!dir.Exists) {dir.Create(); return true;}
 //    else Console.WriteLine("Директория существует. Введите новое название: ");
 //    return false;
-}
+//}
 //string dirName = "";
 //do
 //{
