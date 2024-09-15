@@ -37,11 +37,12 @@
             labelSecondVar = new Label();
             textBoxSecondVar = new TextBox();
             labelResult = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // buttonAdd
             // 
-            buttonAdd.Location = new Point(25, 293);
+            buttonAdd.Location = new Point(25, 243);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(45, 45);
             buttonAdd.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             // buttonSub
             // 
-            buttonSub.Location = new Point(86, 293);
+            buttonSub.Location = new Point(86, 243);
             buttonSub.Name = "buttonSub";
             buttonSub.Size = new Size(45, 45);
             buttonSub.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             // buttonMulti
             // 
-            buttonMulti.Location = new Point(151, 293);
+            buttonMulti.Location = new Point(151, 243);
             buttonMulti.Name = "buttonMulti";
             buttonMulti.Size = new Size(45, 45);
             buttonMulti.TabIndex = 2;
@@ -71,7 +72,7 @@
             // 
             // buttonDiv
             // 
-            buttonDiv.Location = new Point(218, 293);
+            buttonDiv.Location = new Point(218, 243);
             buttonDiv.Name = "buttonDiv";
             buttonDiv.Size = new Size(45, 45);
             buttonDiv.TabIndex = 3;
@@ -123,11 +124,22 @@
             labelResult.TabIndex = 8;
             labelResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            button1.Location = new Point(26, 308);
+            button1.Name = "button1";
+            button1.Size = new Size(132, 23);
+            button1.TabIndex = 9;
+            button1.Text = "Очистить поля ввода";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(284, 361);
+            Controls.Add(button1);
             Controls.Add(labelResult);
             Controls.Add(textBoxSecondVar);
             Controls.Add(labelSecondVar);
@@ -154,5 +166,6 @@
         private Label labelSecondVar;
         private TextBox textBoxSecondVar;
         private Label labelResult;
+        private Button button1;
     }
 }

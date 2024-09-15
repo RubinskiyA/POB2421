@@ -117,5 +117,12 @@ namespace Lesson28
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBoxFirstVar.Text = string.Empty;
+            textBoxSecondVar.Text = string.Empty;
+            labelResult.Text = string.Empty;
+        }
     }
 }
