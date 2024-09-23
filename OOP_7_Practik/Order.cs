@@ -19,7 +19,7 @@
 
         public override string? ToString()
         {
-            return Passanger.FIO + "\n" + Train.Number + "\n" + Train.Destination + "\n" + Train.TimeDeparture + "\n" + Reciept!.Amount + "\n" + Cashier!.FIO;
+            return Passanger!.FIO + "\n" + Train!.Number + "\n" + Train.Destination + "\n" + Train.TimeDeparture + "\n" + Reciept!.Amount + "\n" + Cashier!.FIO;
         }
 
     }
