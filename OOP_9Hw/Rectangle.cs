@@ -13,12 +13,12 @@ namespace OOP_9Hw
         public double C
         {
             get { return c; }
-            set { if (value > 0) c = value; }
+            set { if (value > 0) c = value; else throw new ArgumentException("Число должно быть положительным"); }
         }
         public double D
         {
             get { return d; }
-            set { if (value > 0) d = value; }
+            set { if (value > 0) d = value; else throw new ArgumentException("Число должно быть положительным"); }
         }
 
         public Rectangle(double c, double d) : base(c, d)
