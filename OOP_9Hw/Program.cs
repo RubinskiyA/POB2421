@@ -9,3 +9,7 @@ vine.PrintInfo();
 vine.SetDensity(0.97);
 vine.SetStrength(15);
 vine.PrintInfo();
+Console.WriteLine();
+Rectangle rectangle = new Rectangle(3, 5);
+Console.WriteLine($"Площадь {rectangle.Area()}");
+Console.WriteLine($"Периметр {rectangle.Perimeter()}");
